@@ -29,12 +29,65 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
+            this.progressBar2 = new System.Windows.Forms.ProgressBar();
+            this.timer1 = new System.Windows.Forms.Timer(this.components);
+            this.label1 = new System.Windows.Forms.Label();
+            this.Button1 = new System.Windows.Forms.Button();
+            this.SuspendLayout();
+            // 
+            // progressBar2
+            // 
+            this.progressBar2.Cursor = System.Windows.Forms.Cursors.Arrow;
+            this.progressBar2.ForeColor = System.Drawing.Color.Blue;
+            this.progressBar2.Location = new System.Drawing.Point(157, 236);
+            this.progressBar2.Name = "progressBar2";
+            this.progressBar2.Size = new System.Drawing.Size(453, 23);
+            this.progressBar2.TabIndex = 1;
+            // 
+            // timer1
+            // 
+            this.timer1.Tick += new System.EventHandler(this.timer1_Tick);
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Location = new System.Drawing.Point(476, 151);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(35, 13);
+            this.label1.TabIndex = 2;
+            this.label1.Text = "label1";
+            // 
+            // Button1
+            // 
+            this.Button1.Location = new System.Drawing.Point(414, 319);
+            this.Button1.Name = "Button1";
+            this.Button1.Size = new System.Drawing.Size(75, 23);
+            this.Button1.TabIndex = 3;
+            this.Button1.Text = "button1";
+            this.Button1.UseVisualStyleBackColor = true;
+            // 
+            // Form1
+            // 
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.Button1);
+            this.Controls.Add(this.label1);
+            this.Controls.Add(this.progressBar2);
+            this.Name = "Form1";
             this.Text = "Form1";
+            this.Load += new System.EventHandler(this.Form1_Load);
+            this.ResumeLayout(false);
+            this.PerformLayout();
+
         }
 
         #endregion
+
+        private System.Windows.Forms.ProgressBar progressBar2;
+        private System.Windows.Forms.Timer timer1;
+        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Button Button1;
     }
 }
 
